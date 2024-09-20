@@ -1,0 +1,64 @@
+/* styles.css */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Custom navigation bar styles */
+.navbar-custom {
+    background-color: #e74c3c; /* Red background color */
+    padding: 15px 0;
+    border-radius: 0;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  
+  }
+  
+  .navbar-brand-custom,
+  .navbar-nav-custom .nav-link {
+    color: #ffffff !important; /* White text color */
+    font-weight: bold;
+    position:static;
+  }
+  
+  .navbar-brand-custom:hover,
+  .navbar-nav-custom .nav-link:hover {
+    color: #ffc107 !important; /* Yellow text color on hover */
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #ffffff; /* White color for the toggler icon */
+  }
+  /* Define the animation for the images */
+@keyframes zigzag {
+  0% {
+    transform: translateY(0) rotateZ(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotateZ(10deg);
+  }
+  100% {
+    transform: translateY(0) rotateZ(0deg);
+  }
+}
+
+/* Apply the animation to the images 
+.animated-image {
+  animation: zigzag 2s ease infinite;
+  transition: transform 0.3s ease;
+}*/
+
+/* Hover effect to increase image size */
+.animated-image:hover {
+  transform: scale(1.1);
+}
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+  
+   
